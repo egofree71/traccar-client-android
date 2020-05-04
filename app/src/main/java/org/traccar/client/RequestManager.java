@@ -57,7 +57,7 @@ public class RequestManager {
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setReadTimeout(TIMEOUT);
             connection.setConnectTimeout(TIMEOUT);
-            connection.setRequestMethod("POST");
+            connection.setRequestMethod("GET");
             connection.connect();
             inputStream = connection.getInputStream();
             while (inputStream.read() != -1);
